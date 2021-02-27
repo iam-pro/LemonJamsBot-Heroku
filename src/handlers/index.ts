@@ -9,6 +9,7 @@ import { skipHandler } from './skip';
 export const initHandlers = (): void => {
     bot.use(playHandler);
     bot.use(queueHandler);
+    bot.use(songHandler);
     bot.use(pauseHandler);
     bot.use(skipHandler);
 };
